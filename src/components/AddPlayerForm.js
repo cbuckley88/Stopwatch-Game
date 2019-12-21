@@ -13,6 +13,11 @@ class AddPlayerForm extends Component{
     }
 
     handleSubmit = (e) =>{
+        var mainInput = document.querySelector('.mainInput');
+        if (mainInput.value == "") {
+            alert("enter a name");
+            return;
+        }
         e.preventDefault();
         this.props.addPlayer(this.state.value);
         this.setState({ value: ''});
@@ -24,6 +29,7 @@ class AddPlayerForm extends Component{
             <form onSubmit = {this.handleSubmit}>
                 <input 
                     type="text" 
+                    className = "mainInput"
                     value={this.state.value}
                     onChange = {this.handleValueChange}
                     placeholder = "enter a name">

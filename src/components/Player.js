@@ -20,3 +20,19 @@ const Player = (props) => {
 
   
 export default Player;
+
+
+
+
+// var playerArray = [];
+// var playerScores = document.querySelectorAll('.player > .counter > span');
+// for (var i = 0; i < playerScores.length; i++) {
+//   playerArray.push(i);
+  
+// }
+// console.log(playerArray[1]);
+
+
+//var largest = Math.max(playerScores.value);
+//playerScores[i].style.backgroundColor = "red";
+
